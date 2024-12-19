@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         if (
             Physics.Raycast(
                 transform.position,
-                moveDir,
+                lastInteractDir,
                 out RaycastHit raycastHit,
                 interactDistance,
                 countersLayerMask
